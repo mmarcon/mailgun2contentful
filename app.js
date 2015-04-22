@@ -9,6 +9,12 @@ server.connection({
 });
 
 server.route({
+    method: 'GET',
+    path:'/',
+    handler: function(request, reply){reply('OK');}
+});
+
+server.route({
     method: 'POST',
     path:'/post',
     handler: handler
