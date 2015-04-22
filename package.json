@@ -1,0 +1,21 @@
+{
+  "name": "mailgun2contentful",
+  "version": "1.0.0",
+  "description": "Gets parsed email message from mailgun and posts it to contentful.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "contentful",
+    "mailgun",
+    "toy"
+  ],
+  "author": "Massimiliano Marcon <me@marcon.me>",
+  "license": "MIT",
+  "dependencies": {
+    "ent": "^2.2.0",
+    "hapi": "^8.4.0",
+    "request": "^2.55.0"
+  }
+}
