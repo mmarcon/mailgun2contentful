@@ -9,15 +9,6 @@ server.connection({
     port: process.env.PORT || process.env.VCAP_APP_PORT || 3000
 });
 
-server.route({
-    method: 'GET',
-    path:'/gimme',
-    handler: function (request, reply) {
-       reply('hello world');
-    }
-});
-
-
 config.contentfulToken = process.env.CONTENTFUL_TOKEN || require('./config').contentfulToken;
 
 server.route({
