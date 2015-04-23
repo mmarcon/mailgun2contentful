@@ -2,7 +2,7 @@ var Hapi = require('hapi'),
     handler = require('./lib/mailgun-post-handler');
 
 var server = new Hapi.Server(),
-    port = process.env.PORT || 5000;
+    port = +process.env.PORT || 5000;
 
 server.connection({
     host: 'localhost',
